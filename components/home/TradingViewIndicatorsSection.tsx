@@ -122,30 +122,9 @@ export default function TradingViewIndicatorsSection() {
           </p>
         </div>
 
-        {/* Content grid */}
+        {/* Content grid - SWAPPED: Right section now comes first, Left (chart) comes second */}
         <div className="mt-16 grid grid-cols-1 items-start gap-12 lg:grid-cols-2">
-          {/* Left: real TradingView chart */}
-          <div className="relative">
-            <div className="overflow-hidden border border-gray-200 bg-gray-900 p-2 shadow-xl">
-              <div className="relative overflow-hidden rounded-2xl">
-                {/* Toolbar */}
-                <div className="flex items-center justify-between bg-gray-950 px-3 py-1.5">
-                  <span className="text-xs text-gray-400">‹</span>
-                  <span className="text-[10px] text-gray-300">
-                    Mathematical Indicator
-                  </span>
-                  <span />
-                </div>
-
-                {/* Live TradingView chart */}
-                <div className="relative bg-gray-950 p-2">
-                  <TradingViewChart />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Right: text + feature list */}
+          {/* RIGHT SECTION NOW ON LEFT SIDE */}
           <div>
             <p className="text-base leading-relaxed text-gray-600">
               Move beyond subjective chart patterns. Our Pine Script v6
@@ -178,6 +157,27 @@ export default function TradingViewIndicatorsSection() {
                 About Us
                 <MdArrowOutward className="h-4 w-4" />
               </Button>
+            </div>
+          </div>
+
+          {/* LEFT SECTION (CHART) NOW ON RIGHT SIDE */}
+          <div className="relative">
+            <div className="overflow-hidden border border-gray-200 bg-gray-900 p-2 shadow-xl">
+              <div className="relative overflow-hidden rounded-2xl">
+                {/* Toolbar */}
+                <div className="flex items-center justify-between bg-gray-950 px-3 py-1.5">
+                  <span className="text-xs text-gray-400">‹</span>
+                  <span className="text-[10px] text-gray-300">
+                    Mathematical Indicator
+                  </span>
+                  <span />
+                </div>
+
+                {/* Live TradingView chart */}
+                <div className="relative bg-gray-950 p-2">
+                  <TradingViewChart />
+                </div>
+              </div>
             </div>
           </div>
         </div>

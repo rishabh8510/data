@@ -36,7 +36,7 @@ export default function MissionVisionSection() {
               <ul className="mt-6 space-y-4">
                 {card.points.map((point) => (
                   <li key={point} className="flex items-start gap-3">
-                    <FaCheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-teal-500" />
+                    <FaCheckCircle className="mt-0.5 h-5 w-5 shrink-0 primary-color" />
                     <span className="text-sm font-medium text-slate-700">
                       {point}
                     </span>

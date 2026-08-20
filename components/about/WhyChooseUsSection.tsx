@@ -29,12 +29,12 @@ export default function WhyChooseUsSection() {
         <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
           {/* Left column - content */}
           <div>
-            <span className="text-xs font-semibold tracking-wider text-emerald-600">
+            <span className="text-xs font-semibold tracking-wider text-gray-400">
               WHY SUPREME DATATECH
-            </span>
+            </span> 
 
             <h2 className="mt-4 text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-              Why Choose Us?
+              Why <span className="gradient-text">Choose</span> Us?
             </h2>
 
             <p className="mt-6 max-w-lg text-base leading-relaxed text-slate-600">
@@ -46,8 +46,8 @@ export default function WhyChooseUsSection() {
             <div className="mt-10 space-y-8">
               {reasons.map(({ icon: Icon, title, description }) => (
                 <div key={title} className="flex items-start gap-4">
-                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-lime-100">
-                    <Icon className="h-5 w-5 text-lime-600" />
+                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10">
+                    <Icon className="h-5 w-5 text-primary" />
                   </span>
                   <div>
                     <h3 className="text-lg font-bold text-slate-900">

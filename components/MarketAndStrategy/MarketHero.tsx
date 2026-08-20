@@ -21,7 +21,7 @@ export default function MarketHero() {
             <h1 className="mt-6 text-5xl font-extrabold leading-[1.1] tracking-tight text-slate-900 sm:text-6xl">
               Suprem DataTech
               <br />
-              Trading <span className="text-lime-500">Framework</span>
+              Trading <span className="gradient-text">Framework</span>
             </h1>
 
             <p className="mt-8 max-w-xl text-base leading-relaxed text-slate-600">
@@ -39,22 +39,6 @@ export default function MarketHero() {
               Built as complete frameworks — not standalone indicators.
             </p>
 
-            <div className="mt-10 flex flex-wrap items-center gap-4">
-              <button
-                type="button"
-                className="inline-flex items-center gap-2 rounded-full bg-lime-400 px-6 py-3 text-sm font-bold text-slate-900 transition-colors hover:bg-lime-300"
-              >
-                Get Access Now
-                <FaArrowRight className="h-3.5 w-3.5" />
-              </button>
-              <button
-                type="button"
-                className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50"
-              >
-                <FaBook className="h-3.5 w-3.5" />
-                Documentation
-              </button>
-            </div>
           </div>
 
           {/* Right column - plain image */}

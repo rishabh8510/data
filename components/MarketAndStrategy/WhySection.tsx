@@ -28,14 +28,14 @@ export default function WhySection() {
           {/* Right column - content */}
           <div>
             <div className="flex items-center gap-2">
-              <span className="h-0.5 w-5 rounded-full bg-emerald-500" />
-              <span className="text-xs font-semibold tracking-wider text-emerald-600">
+              <span className="h-0.5 w-5 rounded-full bg-primary" />
+              <span className="text-xs font-semibold tracking-wider text-gray-400">
                 CORE ADVANTAGE
               </span>
             </div>
 
             <h2 className="mt-4 text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl">
-              Why <span className="text-teal-500">Suprem DataTech</span> Systems?
+              Why <span className="gradient-text">Suprem DataTech</span> Systems?
             </h2>
 
             <p className="mt-6 text-base leading-relaxed text-slate-600">
@@ -51,14 +51,14 @@ export default function WhySection() {
               logic.
             </p>
 
-            <p className="mt-8 text-sm font-bold tracking-wide text-orange-500">
+            <p className="mt-8 text-sm font-bold tracking-wide text-primary">
               OUR INDICATOR PACKS PROVIDE:
             </p>
 
             <ul className="mt-4 space-y-3">
               {benefits.map((item) => (
                 <li key={item} className="flex items-center gap-3">
-                  <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue-500">
+                  <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary">
                     <FaCheck className="h-2.5 w-2.5 text-white" />
                   </span>
                   <span className="text-sm text-slate-700">{item}</span>
@@ -66,13 +66,6 @@ export default function WhySection() {
               ))}
             </ul>
 
-            <button
-              type="button"
-              className="mt-10 inline-flex items-center gap-2 rounded-full bg-lime-400 px-6 py-3 text-sm font-bold text-slate-900 transition-colors hover:bg-lime-300"
-            >
-              Get Access Now
-              <FaArrowRight className="h-3.5 w-3.5" />
-            </button>
           </div>
         </div>
       </div>

@@ -47,13 +47,13 @@ export default function ToolkitSection() {
       <div className="relative mx-auto px-6 py-20 lg:px-8">
         <div className="text-center">
           <div className="inline-flex items-center gap-2">
-            <span className="h-0.5 w-5 rounded-full bg-emerald-500" />
-            <span className="text-xs font-semibold tracking-wider text-emerald-600">
+            <span className="h-0.5 w-5 rounded-full bg-gray-400" />
+            <span className="text-xs font-semibold tracking-wider text-gray-400">
               LIVE TOOLKIT
             </span>
           </div>
           <h2 className="mt-4 text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-            Institutional <span className="text-lime-500">Toolkit</span>
+            Institutional <span className="gradient-text">Toolkit</span>
           </h2>
         </div>
 
@@ -73,7 +73,7 @@ export default function ToolkitSection() {
                     sizes="288px"
                   />
                 </div>
-                <div className="flex-1 bg-linear-to-b from-rose-600 to-purple-700 p-5">
+                <div className="flex-1 bg-linear-to-b from-teal-500 to-purple-300 p-5">
                   <p className="text-sm leading-relaxed text-white">
                     <span className="font-bold">{tool.title}</span>{" "}
                     {tool.description}

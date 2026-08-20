@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FaYoutube, FaDiscord, FaInstagram, FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 export default function Footer() {
@@ -8,10 +9,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
           {/* Brand */}
           <div>
-            <Link href="/" className="inline-flex items-center gap-2">
-              <span className="text-xs font-bold text-white">◆</span>
-              <span className="text-lg font-bold tracking-tight">PointAlgo</span>
-            </Link>
+        <Link href="/" className="relative z-10 flex items-center">
+          <Image
+            src="/logo.png"
+            alt="PointAlgo"
+            width={200}
+            height={40}
+            priority
+          />
+        </Link>
             <p className="mt-4 max-w-xs text-xs tracking-wide text-slate-500">
               ADVANCED QUANTITATIVE INTELLIGENCE SYSTEMS.
             </p>
@@ -41,12 +47,6 @@ export default function Footer() {
               <Link href="/indicators" className="text-sm text-slate-300 hover:text-white">
                 Market &amp; Strategy
               </Link>
-              {/* <Link href="/blog" className="text-sm text-slate-300 hover:text-white">
-                Blog
-              </Link>
-              <Link href="/documentation" className="text-sm text-slate-300 hover:text-white">
-                Documentation
-              </Link> */}
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-1 text-sm font-medium text-lime-400 hover:text-lime-300"

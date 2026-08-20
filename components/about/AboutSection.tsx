@@ -25,13 +25,13 @@ export default function AboutSection() {
 
           {/* Right column - content */}
           <div>
-            <span className="text-xs font-semibold tracking-wider text-emerald-600">
+            <span className="text-xs font-semibold tracking-wider text-gray-400">
               ABOUT DATATECH
             </span>
 
             <h2 className="mt-4 text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl">
               Supreme Datatech Provides{" "}
-              <span className="text-lime-500">Advanced Data Solutions.</span>
+              <span className="gradient-text">Advanced Data Solutions.</span>
             </h2>
 
             <p className="mt-6 text-base leading-relaxed text-slate-600">
@@ -45,21 +45,13 @@ export default function AboutSection() {
             <ul className="mt-8 space-y-4">
               {highlights.map((item) => (
                 <li key={item} className="flex items-center gap-3">
-                  <FaCheckCircle className="h-5 w-5 shrink-0 text-teal-500" />
+                  <FaCheckCircle className="h-5 w-5 shrink-0 primary-color" />
                   <span className="text-sm font-medium text-slate-700">
                     {item}
                   </span>
                 </li>
               ))}
             </ul>
-
-            <button
-              type="button"
-              className="mt-10 inline-flex items-center gap-2 rounded-full bg-lime-400 px-6 py-3 text-sm font-bold text-slate-900 transition-colors hover:bg-lime-300"
-            >
-              Read More
-              <FaArrowRight className="h-3.5 w-3.5" />
-            </button>
           </div>
         </div>
       </div>
