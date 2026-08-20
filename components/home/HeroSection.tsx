@@ -1,31 +1,20 @@
 import Image from "next/image";
-import { ArrowRight, BookOpen, Circle } from "lucide-react";
+import { Circle } from "lucide-react";
+import Button from "../Button";
+import { MdArrowOutward } from "react-icons/md";
+import { FaBookOpen } from "react-icons/fa6";
 
 export default function HeroSection() {
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden">
-      {/* Soft color glows */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -left-20 top-10 h-72 w-72 rounded-full bg-lime-200/50 blur-3xl"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute right-0 top-40 h-72 w-72 rounded-full bg-emerald-200/40 blur-3xl"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute left-1/2 top-96 h-56 w-56 -translate-x-1/2 rounded-full bg-rose-100/50 blur-3xl"
-      />
-
       {/* Full-bleed image — top/bottom full, right edge full, connects to text with no gap */}
       <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-1/2 lg:block">
         <Image
-          src="/images/herosecond.jpeg"
+          src="/images/herosection.jpeg"
           alt="Trading dashboard preview"
           fill
           priority
-          className="object-cover"
+          className=""
         />
       </div>
 
@@ -43,9 +32,11 @@ export default function HeroSection() {
           <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
             <span className="whitespace-nowrap">Trade with Structure.</span>
             <br />
-            <span className="whitespace-nowrap text-lime-500">Execute with</span>
+            <span className="whitespace-nowrap gradient-text">
+              Execute with
+            </span>
             <br />
-            <span className="text-lime-500">Precision</span>
+            <span className="gradient-text">Precision</span>
           </h1>
 
           {/* Subtext */}
@@ -56,14 +47,15 @@ export default function HeroSection() {
 
           {/* Buttons */}
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <button className="flex items-center gap-2 rounded-lg bg-lime-400 px-6 py-3 text-sm font-semibold text-gray-900 transition hover:bg-lime-500">
+            <Button variant="gradient" className="gap-2">
               Get Access
-              <ArrowRight className="h-4 w-4" />
-            </button>
-            <button className="flex items-center gap-2 rounded-lg border border-gray-300 bg-white px-6 py-3 text-sm font-semibold text-gray-800 transition hover:bg-gray-50">
-              <BookOpen className="h-4 w-4" />
+              <MdArrowOutward className="h-4 w-4" />
+            </Button>
+
+            <Button variant="outline-primary" className="gap-2">
+              <FaBookOpen className="h-4 w-4" />
               Documentation
-            </button>
+            </Button>
           </div>
         </div>
 

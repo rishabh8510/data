@@ -1,35 +1,29 @@
 import Image from "next/image";
-import { Code2, FileSpreadsheet, Settings2, FlaskConical } from "lucide-react";
+import { GiMonumentValley } from "react-icons/gi";
+import { SiFiles, SiDeviantart } from "react-icons/si";
+import { RiChatSearchFill } from "react-icons/ri";
 
 const features = [
   {
-    icon: Code2,
-    iconBg: "bg-teal-50",
-    iconColor: "text-teal-600",
+    icon: GiMonumentValley,
     title: "Invite-Only Indicators (TV)",
     description:
       "Suite of Pine Script v6 tools built on statistical models for non-repainting execution zones.",
   },
   {
-    icon: FileSpreadsheet,
-    iconBg: "bg-emerald-50",
-    iconColor: "text-emerald-600",
+    icon: SiFiles,
     title: "Systematic Files (MT5)",
     description:
       "Execution-ready .ex5 files. Deploy hardcoded quantitative logic directly to your MT5 environment.",
   },
   {
-    icon: Settings2,
-    iconBg: "bg-violet-50",
-    iconColor: "text-violet-600",
+    icon: SiDeviantart,
     title: "Bespoke Quant Dev",
     description:
       "Expert Pine Script & MQL5 engineers to transform your proprietary ideas into production algorithms.",
   },
   {
-    icon: FlaskConical,
-    iconBg: "bg-amber-50",
-    iconColor: "text-amber-600",
+    icon: RiChatSearchFill,
     title: "Validation & Research",
     description:
       "Rigorous backtesting and logic transparency to verify your mathematical edge before deployment.",
@@ -45,7 +39,7 @@ export default function InfrastructureSection() {
           <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
             High-Performance
           </h2>
-          <h2 className="mt-2 text-4xl font-extrabold tracking-tight text-teal-500 sm:text-5xl">
+          <h2 className="mt-2 text-4xl font-extrabold tracking-tight gradient-text sm:text-5xl">
             Infrastructure
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-base text-gray-500">
@@ -73,9 +67,9 @@ export default function InfrastructureSection() {
             {features.map((f) => (
               <div key={f.title} className="flex gap-4">
                 <div
-                  className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ${f.iconBg}`}
+                  className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10`}
                 >
-                  <f.icon className={`h-5 w-5 ${f.iconColor}`} />
+                  <f.icon className={`h-5 w-5 text-primary`} />
                 </div>
                 <div>
                   <h3 className="text-base font-semibold text-gray-900">

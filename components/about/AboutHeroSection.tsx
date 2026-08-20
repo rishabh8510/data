@@ -37,11 +37,12 @@ const features = [
 
 export default function AboutHeroSection() {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden mt-20">
       {/* ambient glow */}
       <div className="pointer-events-none absolute right-0 top-1/3 h-72 w-[32rem] -translate-y-1/2 rounded-full bg-lime-200/40 blur-[100px]" />
 
       <div className="relative mx-auto max-w-7xl px-6 py-20 sm:py-28 lg:px-8">
+        {/* FIX: Added items-center to vertically center both columns */}
         <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
           {/* Left column */}
           <div>
@@ -57,15 +58,15 @@ export default function AboutHeroSection() {
               <br />
               Curiosity.
               <br />
-              <span className="text-lime-500">To Enterprise</span>
+              <span className="gradient-text">To Enterprise</span>
               <br />
-              <span className="text-lime-500">Quant</span>
+              <span className="gradient-text">Quant</span>
               <br />
-              <span className="text-lime-500">Infrastructure.</span>
+              <span className="gradient-text">Infrastructure.</span>
             </h1>
 
             <p className="mt-8 max-w-xl text-base leading-relaxed text-slate-600">
-              PointAlgo is building a bridge between market intuition and
+              Suprem Datatech is building a bridge between market intuition and
               institutional-grade quantitative execution. Our mission is to
               make disciplined, mathematically structured trading systems
               accessible beyond closed enterprise environments.

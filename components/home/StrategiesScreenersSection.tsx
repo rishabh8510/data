@@ -16,7 +16,7 @@ export default function StrategiesScreenersSection() {
         <div className="flex h-full flex-col items-start justify-center">
           {/* Eyebrow */}
           <div className="mb-4 flex items-center gap-2">
-            <span className="h-px w-6 bg-gradient-to-r from-lime-400 to-transparent" />
+            <span className="h-px w-6 bg-gradient-to-r from-primary to-transparent" />
             <span className="text-xs font-semibold tracking-widest text-gray-400">
               SCREENERS
             </span>
@@ -24,7 +24,7 @@ export default function StrategiesScreenersSection() {
 
           {/* Heading */}
           <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
-            Strategies &amp; <span className="text-sky-500">Screeners</span>
+            Strategies &amp; <span className="gradient-text">Screeners</span>
           </h2>
 
           {/* Description */}
@@ -37,8 +37,8 @@ export default function StrategiesScreenersSection() {
           <ul className="mt-8 space-y-3">
             {checklist.map((item) => (
               <li key={item} className="flex items-start gap-2.5">
-                <span className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-sky-100">
-                  <Check className="h-2.5 w-2.5 text-sky-600" />
+                <span className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-primary/10">
+                  <Check className="h-2.5 w-2.5 text-primary" />
                 </span>
                 <span className="text-sm text-gray-600">{item}</span>
               </li>

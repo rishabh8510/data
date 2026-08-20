@@ -5,8 +5,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "MyWebsite",
-  description: "My Next.js Website",
+  title: "Suprem DataTech",
+  description: "Trading website",
 };
 
 export default function RootLayout({

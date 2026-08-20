@@ -1,29 +1,33 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { Filter, Lock, History, BellRing, ArrowRight } from "lucide-react";
+import { IoColorFilter } from "react-icons/io5";
+import { MdArrowOutward, MdVpnLock } from "react-icons/md";
+import { SiClockify } from "react-icons/si";
+import { HiMiniBellAlert } from "react-icons/hi2";
+import Button from "../Button";
 
 const features = [
   {
-    icon: Filter,
+    icon: IoColorFilter,
     title: "Signal-to-Noise Filtering",
     description:
       'Advanced mathematical smoothing filters out "fake-outs" to reveal the true underlying trend.',
   },
   {
-    icon: Lock,
+    icon: MdVpnLock,
     title: "Invite-Only Quant Logic",
     description:
       "Proprietary algorithms designed for high-probability mean-reversion and trend-following setups.",
   },
   {
-    icon: History,
+    icon: SiClockify,
     title: "Non-Repaint Integrity",
     description:
       'Calculations performed on "Bar Close." No history rewriting—essential for valid backtests.',
   },
   {
-    icon: BellRing,
+    icon: HiMiniBellAlert,
     title: "High-Performance Alerts",
     description:
       "Instant execution signals via optimized TradingView alerts for Nifty, Gold, and Global Equities.",
@@ -108,7 +112,7 @@ export default function TradingViewIndicatorsSection() {
         {/* Heading */}
         <div className="text-center">
           <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
-            Quant-Driven <span className="text-lime-500">TradingView</span>
+            Quant-Driven <span className="gradient-text">TradingView</span>
           </h2>
           <h2 className="mt-2 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
             Indicators
@@ -155,8 +159,8 @@ export default function TradingViewIndicatorsSection() {
             <div className="mt-10 space-y-7">
               {features.map((f) => (
                 <div key={f.title} className="flex gap-4">
-                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-lime-50">
-                    <f.icon className="h-4 w-4 text-lime-600" />
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary/10">
+                    <f.icon className="h-4 w-4 text-primary" />
                   </div>
                   <div>
                     <h3 className="text-base font-semibold text-gray-900">
@@ -169,11 +173,12 @@ export default function TradingViewIndicatorsSection() {
                 </div>
               ))}
             </div>
-
-            <button className="mt-10 flex items-center gap-2 rounded-lg border border-gray-300 bg-white px-6 py-3 text-sm font-semibold text-gray-800 transition hover:bg-gray-50">
-              Get Access
-              <ArrowRight className="h-4 w-4" />
-            </button>
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <Button variant="gradient" className="gap-2">
+                About Us
+                <MdArrowOutward className="h-4 w-4" />
+              </Button>
+            </div>
           </div>
         </div>
       </div>

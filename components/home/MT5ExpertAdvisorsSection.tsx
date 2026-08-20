@@ -1,27 +1,31 @@
 import Image from "next/image";
-import { Cpu, ShieldCheck, Zap, Layers, ArrowRight } from "lucide-react";
+import { FaMicrochip } from "react-icons/fa6";
+import { GiCrackedShield } from "react-icons/gi";
+import { SiThunderstore, SiCloudnativebuild } from "react-icons/si";
+import Button from "../Button";
+import { MdArrowOutward } from "react-icons/md";
 
 const features = [
   {
-    icon: Cpu,
+    icon: FaMicrochip,
     title: "Algorithmic Consistency",
     description:
       "Remove the human element. Our .ex5 files execute rules with 100% mechanical consistency.",
   },
   {
-    icon: ShieldCheck,
+    icon: GiCrackedShield,
     title: "Quantitative Risk Architecture",
     description:
       "Hardcoded management including volatility-based sizing and equity protection controls.",
   },
   {
-    icon: Zap,
+    icon: SiThunderstore,
     title: "Low-Latency Infrastructure",
     description:
       "Optimized for speed. Built to ensure your orders hit the book the moment the quant logic triggers.",
   },
   {
-    icon: Layers,
+    icon: SiCloudnativebuild,
     title: "SaaS Delivery Model",
     description:
       "Instant access to latest builds. Your tools stay updated in the cloud as we refine our models.",
@@ -35,7 +39,7 @@ export default function MT5ExpertAdvisorsSection() {
         {/* Heading */}
         <div className="text-center">
           <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
-            Algorithmic <span className="text-emerald-500">MT5</span> Expert
+            Algorithmic <span className="gradient-text">MT5</span> Expert
           </h2>
           <h2 className="mt-2 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
             Advisors
@@ -72,8 +76,8 @@ export default function MT5ExpertAdvisorsSection() {
             <div className="mt-10 space-y-7">
               {features.map((f) => (
                 <div key={f.title} className="flex gap-4">
-                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-emerald-50">
-                    <f.icon className="h-4 w-4 text-emerald-600" />
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary/10">
+                    <f.icon className="h-4 w-4 text-primary" />
                   </div>
                   <div>
                     <h3 className="text-base font-semibold text-gray-900">
@@ -87,10 +91,12 @@ export default function MT5ExpertAdvisorsSection() {
               ))}
             </div>
 
-            <button className="mt-10 flex items-center gap-2 rounded-lg border border-gray-300 bg-white px-6 py-3 text-sm font-semibold text-gray-800 shadow-sm transition hover:bg-gray-50">
-              Get Access
-              <ArrowRight className="h-4 w-4" />
-            </button>
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <Button variant="gradient" className="gap-2">
+                Get Market & Strategy
+                <MdArrowOutward className="h-4 w-4" />
+              </Button>
+            </div>
           </div>
         </div>
       </div>

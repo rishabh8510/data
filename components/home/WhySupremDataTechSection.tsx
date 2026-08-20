@@ -3,32 +3,24 @@ import { FaChartLine, FaLock, FaRobot, FaGraduationCap } from "react-icons/fa";
 const cards = [
   {
     icon: FaChartLine,
-    iconBg: "bg-lime-50",
-    iconColor: "text-lime-600",
     title: "Mathematically Validated",
     description:
       "Every indicator and strategy is grounded in statistical theory, not retail chart patterns.",
   },
   {
     icon: FaLock,
-    iconBg: "bg-teal-50",
-    iconColor: "text-teal-600",
     title: "Invite-Only Access",
     description:
       "Proprietary Pine Script v6 logic — protected, non-repainting, institutional quality.",
   },
   {
     icon: FaRobot,
-    iconBg: "bg-emerald-50",
-    iconColor: "text-emerald-600",
     title: "Fully Automated",
     description:
       "MT5 Expert Advisors that execute 24/7 with zero emotion and zero delay.",
   },
   {
     icon: FaGraduationCap,
-    iconBg: "bg-amber-50",
-    iconColor: "text-amber-600",
     title: "Research-Backed",
     description:
       "In-depth performance reports for Indian and Global markets, updated continuously.",
@@ -41,7 +33,7 @@ export default function WhySupremDataSection() {
       <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
         {/* Eyebrow */}
         <div className="flex items-center justify-center gap-2">
-          <span className="h-px w-6 bg-gradient-to-r from-lime-400 to-transparent" />
+          <span className="h-px w-6 bg-gradient-to-r from-primary to-transparent" />
           <span className="text-xs font-semibold tracking-widest text-gray-400">
             WHY SUPREM DATATECH
           </span>
@@ -49,7 +41,7 @@ export default function WhySupremDataSection() {
 
         {/* Heading */}
         <h2 className="mt-4 text-center text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
-          Built for the <span className="text-lime-500">Serious</span>
+          Built for the <span className="gradient-text">Serious</span>
         </h2>
         <h2 className="mt-2 text-center text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
           Trader
@@ -63,9 +55,9 @@ export default function WhySupremDataSection() {
               className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition hover:shadow-md"
             >
               <div
-                className={`flex h-11 w-11 items-center justify-center rounded-xl ${c.iconBg}`}
+                className={`flex h-11 w-11 items-center justify-center rounded-full bg-primary/10`}
               >
-                <c.icon className={`h-5 w-5 ${c.iconColor}`} />
+                <c.icon className={`h-5 w-5 text-primary`} />
               </div>
               <h3 className="mt-5 text-base font-semibold text-gray-900">
                 {c.title}
