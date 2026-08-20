@@ -75,7 +75,7 @@ function TradingViewChart() {
       symbol: CHART_SYMBOL,
       interval: "D",
       timezone: "Asia/Kolkata",
-      theme: "dark",
+      theme: "light", // Changed from "dark" to "light"
       style: "1",
       locale: "in",
       enable_publishing: false,
@@ -160,21 +160,21 @@ export default function TradingViewIndicatorsSection() {
             </div>
           </div>
 
-          {/* LEFT SECTION (CHART) NOW ON RIGHT SIDE */}
+          {/* LEFT SECTION (CHART) NOW ON RIGHT SIDE - LIGHT MODE VERSION */}
           <div className="relative">
-            <div className="overflow-hidden border border-gray-200 bg-gray-900 p-2 shadow-xl">
+            <div className="overflow-hidden border border-gray-200 bg-white p-2">
               <div className="relative overflow-hidden rounded-2xl">
-                {/* Toolbar */}
-                <div className="flex items-center justify-between bg-gray-950 px-3 py-1.5">
-                  <span className="text-xs text-gray-400">‹</span>
-                  <span className="text-[10px] text-gray-300">
+                {/* Toolbar - Light Mode */}
+                <div className="flex items-center justify-between bg-gray-100 px-3 py-1.5">
+                  <span className="text-xs text-gray-600">‹</span>
+                  <span className="text-[10px] font-medium text-gray-700">
                     Mathematical Indicator
                   </span>
                   <span />
                 </div>
 
-                {/* Live TradingView chart */}
-                <div className="relative bg-gray-950 p-2">
+                {/* Live TradingView chart - Light Mode wrapper */}
+                <div className="relative bg-white p-2">
                   <TradingViewChart />
                 </div>
               </div>
