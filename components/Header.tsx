@@ -1,7 +1,19 @@
+"use client";
+
 import Link from "next/link";
-import { ChevronDown } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
+  const pathname = usePathname();
+
+  // Function to check if a link is active
+  const isActive = (path: string) => {
+    if (path === "/") {
+      return pathname === path;
+    }
+    return pathname?.startsWith(path);
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-gray-200 bg-white">
       <div className="relative mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -30,27 +42,47 @@ export default function Header() {
         <nav className="relative z-10 hidden items-center gap-8 md:flex">
           <Link
             href="/"
-            className="text-sm font-medium text-lime-600 transition hover:text-lime-700"
+            className={`text-sm font-medium transition ${
+              isActive("/")
+                ? "text-lime-600 hover:text-lime-700"
+                : "text-gray-600 hover:text-gray-900"
+            }`}
           >
             Home
           </Link>
 
           <Link
-            href="/indicator-and-strategy"
-            className="text-sm font-medium text-gray-600 transition hover:text-gray-900"
+            href="/about"
+            className={`text-sm font-medium transition ${
+              isActive("/about")
+                ? "text-lime-600 hover:text-lime-700"
+                : "text-gray-600 hover:text-gray-900"
+            }`}
           >
-            Indicator and Strategy
+            About
           </Link>
 
-          <button className="flex items-center gap-1 text-sm font-medium text-gray-600 transition hover:text-gray-900">
-            Resources
-            <ChevronDown className="h-4 w-4" />
-          </button>
+          <Link
+            href="/market-and-strategy"
+            className={`text-sm font-medium transition ${
+              isActive("/market-and-strategy")
+                ? "text-lime-600 hover:text-lime-700"
+                : "text-gray-600 hover:text-gray-900"
+            }`}
+          >
+            Market and Strategy
+          </Link>
 
-          <button className="flex items-center gap-1 text-sm font-medium text-gray-600 transition hover:text-gray-900">
-            Community
-            <ChevronDown className="h-4 w-4" />
-          </button>
+          <Link
+            href="/contact"
+            className={`text-sm font-medium transition ${
+              isActive("/contact")
+                ? "text-lime-600 hover:text-lime-700"
+                : "text-gray-600 hover:text-gray-900"
+            }`}
+          >
+            Contact
+          </Link>
         </nav>
 
         {/* Button */}

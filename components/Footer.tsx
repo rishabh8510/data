@@ -1,96 +1,111 @@
 import Link from "next/link";
+import { FaYoutube, FaDiscord, FaInstagram, FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="border-t bg-gray-950 text-white">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        
+    <footer className="border-t border-slate-800 bg-slate-950 text-white">
+      <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
-          
           {/* Brand */}
           <div>
-            <h2 className="text-xl font-bold">MyWebsite</h2>
-            <p className="mt-4 max-w-xs text-sm leading-6 text-gray-400">
-              Build modern, fast and beautiful web experiences with Next.js.
+            <Link href="/" className="inline-flex items-center gap-2">
+              <span className="text-xs font-bold text-white">◆</span>
+              <span className="text-lg font-bold tracking-tight">PointAlgo</span>
+            </Link>
+            <p className="mt-4 max-w-xs text-xs tracking-wide text-slate-500">
+              ADVANCED QUANTITATIVE INTELLIGENCE SYSTEMS.
             </p>
-          </div>
 
-          {/* Company */}
-          <div>
-            <h3 className="font-semibold">Company</h3>
-
-            <div className="mt-4 flex flex-col gap-3">
-              <Link
-                href="/about"
-                className="text-sm text-gray-400 hover:text-white"
-              >
-                About
+            <div className="mt-6 flex items-center gap-4">
+              <Link href="#" aria-label="YouTube" className="text-red-500 transition-opacity hover:opacity-80">
+                <FaYoutube className="h-5 w-5" />
               </Link>
-
-              <Link
-                href="/services"
-                className="text-sm text-gray-400 hover:text-white"
-              >
-                Services
+              <Link href="#" aria-label="Discord" className="text-indigo-400 transition-opacity hover:opacity-80">
+                <FaDiscord className="h-5 w-5" />
               </Link>
-
-              <Link
-                href="/contact"
-                className="text-sm text-gray-400 hover:text-white"
-              >
-                Contact
+              <Link href="#" aria-label="Instagram" className="text-pink-500 transition-opacity hover:opacity-80">
+                <FaInstagram className="h-5 w-5" />
               </Link>
             </div>
           </div>
 
-          {/* Resources */}
+          {/* Platform */}
           <div>
-            <h3 className="font-semibold">Resources</h3>
-
+            <h3 className="text-xs font-semibold tracking-wider text-slate-400">
+              PLATFORM
+            </h3>
             <div className="mt-4 flex flex-col gap-3">
-              <Link
-                href="/blog"
-                className="text-sm text-gray-400 hover:text-white"
-              >
+              <Link href="/" className="text-sm text-slate-300 hover:text-white">
+                Home
+              </Link>
+              <Link href="/indicators" className="text-sm text-slate-300 hover:text-white">
+                Market &amp; Strategy
+              </Link>
+              {/* <Link href="/blog" className="text-sm text-slate-300 hover:text-white">
                 Blog
               </Link>
-
+              <Link href="/documentation" className="text-sm text-slate-300 hover:text-white">
+                Documentation
+              </Link> */}
               <Link
-                href="/faq"
-                className="text-sm text-gray-400 hover:text-white"
+                href="/contact"
+                className="inline-flex items-center gap-1 text-sm font-medium text-lime-400 hover:text-lime-300"
               >
-                FAQ
+                Contact Us
+                <FaArrowUpRightFromSquare className="h-3 w-3" />
               </Link>
+            </div>
+          </div>
 
-              <Link
-                href="/privacy"
-                className="text-sm text-gray-400 hover:text-white"
-              >
+          {/* Legal & Compliance */}
+          <div>
+            <h3 className="text-xs font-semibold tracking-wider text-slate-400">
+              LEGAL &amp; COMPLIANCE
+            </h3>
+            <div className="mt-4 flex flex-col gap-3">
+              <Link href="/terms" className="text-sm text-slate-300 hover:text-white">
+                Terms &amp; Conditions
+              </Link>
+              <Link href="/privacy" className="text-sm text-slate-300 hover:text-white">
                 Privacy Policy
               </Link>
+              <Link href="/refund" className="text-sm text-slate-300 hover:text-white">
+                Refund &amp; Cancellation
+              </Link>
+              <Link href="/about" className="text-sm text-slate-300 hover:text-white">
+                About Us
+              </Link>
             </div>
           </div>
 
-          {/* Contact */}
+          {/* Connect */}
           <div>
-            <h3 className="font-semibold">Contact</h3>
+            <h3 className="text-xs font-semibold tracking-wider text-slate-400">
+              CONNECT
+            </h3>
 
-            <div className="mt-4 space-y-3 text-sm text-gray-400">
-              <p>hello@example.com</p>
-              <p>+91 98765 43210</p>
-              <p>Indore, Madhya Pradesh</p>
-            </div>
+            <p className="mt-4 text-[11px] font-semibold tracking-wider text-slate-500">
+              INQUIRIES
+            </p>
+            <p className="mt-1 text-sm text-white">info.supremedatatech@gmail.com</p>
+
+            <p className="mt-4 text-[11px] font-semibold tracking-wider text-slate-500">
+              SUPPORT
+            </p>
+            <p className="mt-1 text-sm text-white">+91 9770435842</p>
+
+            <p className="mt-4 text-sm italic text-slate-400">
+              Manyata Business Tech Park Bengaluru, Karnataka (560045)
+            </p>
           </div>
-
         </div>
 
         {/* Bottom */}
-        <div className="mt-10 border-t border-gray-800 pt-6 text-center">
-          <p className="text-sm text-gray-500">
-            © {new Date().getFullYear()} MyWebsite. All rights reserved.
+        <div className="mt-12 border-t border-slate-800 pt-6 text-center">
+          <p className="text-sm text-slate-500">
+            © {new Date().getFullYear()} Suprem DataTech. All rights reserved.
           </p>
         </div>
-
       </div>
     </footer>
   );

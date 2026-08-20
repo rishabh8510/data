@@ -55,7 +55,7 @@ export default function StrategiesScreenersSection() {
         {/* Right column: real image loaded from /public/images folder */}
         <div className="relative h-full min-h-[420px] w-full overflow-hidden lg:min-h-0">
           <Image
-            src="/images/Strategies.jpg"
+            src="/images/strategic.jpeg"
             alt="Strategies and screeners dashboard preview"
             fill
             className="object-cover"
