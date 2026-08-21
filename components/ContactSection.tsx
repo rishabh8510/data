@@ -29,19 +29,19 @@ const contactCards = [
     label: "LOCATION",
     value: "Manyata Business Tech Park Bengaluru, Karnataka (560045)",
   },
-  {
-    icon: FaDiscord,
-    label: "COMMUNITY",
-    value: "Join Discord Server",
-  },
+  // {
+  //   icon: FaDiscord,
+  //   label: "COMMUNITY",
+  //   value: "Join Discord Server",
+  // },
 ];
 
-const socials = [
-  { icon: FaYoutube, label: "YOUTUBE" },
-  { icon: FaDiscord, label: "DISCORD" },
-  { icon: FaInstagram, label: "INSTAGRAM" },
-  { icon: FaTwitter, label: "TWITTER" },
-];
+// const socials = [
+//   { icon: FaYoutube, label: "YOUTUBE" },
+//   { icon: FaDiscord, label: "DISCORD" },
+//   { icon: FaInstagram, label: "INSTAGRAM" },
+//   { icon: FaTwitter, label: "TWITTER" },
+// ];
 
 export default function ContactSection() {
   return (
@@ -50,7 +50,7 @@ export default function ContactSection() {
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
           {/* Left column */}
           <div>
-            <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5">
+            <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5">
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
               <span className="text-xs font-semibold tracking-wider text-primary">
                 DIRECT INQUIRY — RESPONSE WITHIN 24 HRS
@@ -74,7 +74,7 @@ export default function ContactSection() {
                   className="flex items-center gap-4 rounded-2xl border border-slate-200 bg-slate-50/60 p-5 shadow-sm"
                 >
                   <div
-                    className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10`}
+                    className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-primary/10`}
                   >
                     <Icon className={`h-5 w-5 text-primary`} />
                   </div>
@@ -88,25 +88,6 @@ export default function ContactSection() {
                   </div>
                 </div>
               ))}
-            </div>
-
-            {/* Socials */}
-            <div className="mt-8">
-              <p className="text-[11px] font-semibold tracking-wider text-slate-400">
-                FOLLOW US
-              </p>
-              <div className="mt-3 flex flex-wrap gap-3">
-                {socials.map(({ icon: Icon, label }) => (
-                  <button
-                    key={label}
-                    type="button"
-                    className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-2 text-xs font-semibold tracking-wide text-primary transition-colors hover:bg-primary/10"
-                  >
-                    <Icon className="h-3.5 w-3.5" />
-                    {label}
-                  </button>
-                ))}
-              </div>
             </div>
           </div>
 
@@ -193,7 +174,7 @@ export default function ContactSection() {
               <Button 
                 variant="gradient"
                 type="submit"
-                className="flex w-full items-center justify-center gap-2 rounded-xl bg-primary py-3 text-sm font-bold tracking-wide text-white transition-colors hover:bg-primary/90"
+                className="flex w-full items-center justify-center gap-2 rounded-full bg-primary py-3 text-sm font-bold tracking-wide text-white transition-colors hover:bg-primary/90"
               >
                 SUBMIT REQUEST
                 <FaArrowRight className="h-4 w-4" />

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaCircle, FaArrowRight, FaBook } from "react-icons/fa";
+import { FaCircle } from "react-icons/fa";
 
 export default function MarketHero() {
   return (
@@ -11,9 +11,9 @@ export default function MarketHero() {
         <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
           {/* Left column */}
           <div>
-            <div className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1.5">
-              <FaCircle className="h-1.5 w-1.5 text-emerald-500" />
-              <span className="text-xs font-semibold tracking-wider text-emerald-700">
+            <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5">
+              <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+              <span className="text-xs font-semibold tracking-wider text-primary">
                 PROFESSIONAL QUANT TRADING SYSTEMS
               </span>
             </div>
@@ -25,8 +25,8 @@ export default function MarketHero() {
             </h1>
 
             <p className="mt-8 max-w-xl text-base leading-relaxed text-slate-600">
-              Professional  trading systems designed for Equity,
-              Options, Futures, Forex, Commodity &amp; Crypto markets.
+              Professional trading systems designed for Equity, Options,
+              Futures, Forex, Commodity &amp; Crypto markets.
             </p>
 
             <p className="mt-5 max-w-xl text-base leading-relaxed text-slate-600">
@@ -38,7 +38,6 @@ export default function MarketHero() {
             <p className="mt-6 text-base italic text-orange-500">
               Built as complete frameworks — not standalone indicators.
             </p>
-
           </div>
 
           {/* Right column - plain image */}

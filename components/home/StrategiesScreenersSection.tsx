@@ -44,12 +44,6 @@ export default function StrategiesScreenersSection() {
               </li>
             ))}
           </ul>
-
-          {/* Button */}
-          <button className="mt-10 flex items-center gap-2 rounded-lg border border-gray-300 bg-white px-6 py-3 text-sm font-semibold text-gray-800 shadow-sm transition hover:bg-gray-50">
-            Get Access
-            <ArrowRight className="h-4 w-4" />
-          </button>
         </div>
 
         {/* Right column: real image loaded from /public/images folder */}

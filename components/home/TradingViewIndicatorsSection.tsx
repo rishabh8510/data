@@ -153,7 +153,7 @@ export default function TradingViewIndicatorsSection() {
               ))}
             </div>
             <div className="mt-8 flex flex-wrap items-center gap-4">
-              <Button variant="gradient" className="gap-2">
+              <Button variant="gradient" className="gap-2" href="/about">
                 About Us
                 <MdArrowOutward className="h-4 w-4" />
               </Button>

@@ -38,7 +38,7 @@ export default function Header() {
 
   // WhatsApp redirect function
   const handleWhatsAppClick = () => {
-    const phoneNumber = "1234567890"; // Apna WhatsApp number yahan daalein
+    const phoneNumber = "9770435842"; // Apna WhatsApp number yahan daalein
     const message = "Hello! I want to know more about Suprem DataTech.";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
@@ -89,10 +89,9 @@ export default function Header() {
           })}
         </nav>
         
-        {/* WhatsApp Button - same color scheme as before */}
+        {/* WhatsApp Button - Default Green Color */}
         <Button 
-          variant="gradient" 
-          className="flex items-center gap-2"
+          className="flex items-center gap-2 bg-[#25D366]! hover:bg-[#128C7E]! text-white"
           onClick={handleWhatsAppClick}
         >
           <svg 

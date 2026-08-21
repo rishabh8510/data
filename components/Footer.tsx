@@ -21,18 +21,6 @@ export default function Footer() {
             <p className="mt-4 max-w-xs text-xs tracking-wide text-slate-500">
               ADVANCED QUANTITATIVE INTELLIGENCE SYSTEMS.
             </p>
-
-            <div className="mt-6 flex items-center gap-4">
-              <Link href="#" aria-label="YouTube" className="text-red-500 transition-opacity hover:opacity-80">
-                <FaYoutube className="h-5 w-5" />
-              </Link>
-              <Link href="#" aria-label="Discord" className="text-indigo-400 transition-opacity hover:opacity-80">
-                <FaDiscord className="h-5 w-5" />
-              </Link>
-              <Link href="#" aria-label="Instagram" className="text-pink-500 transition-opacity hover:opacity-80">
-                <FaInstagram className="h-5 w-5" />
-              </Link>
-            </div>
           </div>
 
           {/* Platform */}
@@ -44,7 +32,7 @@ export default function Footer() {
               <Link href="/" className="text-sm text-slate-300 hover:text-white">
                 Home
               </Link>
-              <Link href="/indicators" className="text-sm text-slate-300 hover:text-white">
+              <Link href="/market-and-strategy" className="text-sm text-slate-300 hover:text-white">
                 Market &amp; Strategy
               </Link>
               <Link

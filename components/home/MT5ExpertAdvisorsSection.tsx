@@ -92,7 +92,7 @@ export default function MT5ExpertAdvisorsSection() {
             </div>
 
             <div className="mt-8 flex flex-wrap items-center gap-4">
-              <Button variant="gradient" className="gap-2">
+              <Button variant="gradient" className="gap-2" href="/market-and-strategy">
                 Get Market & Strategy
                 <MdArrowOutward className="h-4 w-4" />
               </Button>
